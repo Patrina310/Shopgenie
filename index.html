@@ -2,10 +2,16 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopGenie 比價搜尋</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopGenie 多平台搜尋</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="icon.png" />
+    <meta name="theme-color" content="#667eea" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ShopGenie 多平台搜尋" />
+    <link rel="apple-touch-icon" href="icon.png" />
     <style>
         body {
             font-family: 'Rubik', sans-serif;
@@ -36,15 +42,10 @@
             border-radius: 10px;
             border: 2px solid #ccc;
         }
-        .search-input:focus {
-            border-color: #4facfe;
-            outline: none;
-        }
         .button-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
             gap: 15px;
-            margin-top: 20px;
         }
         .store-button {
             padding: 15px;
@@ -67,7 +68,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🛍️ ShopGenie 多平台價格搜尋</h1>
+        <h1>🛍️ ShopGenie 多平台搜尋</h1>
         <input type="text" class="search-input" id="productInput" placeholder="輸入商品名稱 (例如：iPhone 15)" required>
         <div class="button-grid">
             <button class="store-button momo" onclick="searchStore('momo')">📦 Momo</button>
